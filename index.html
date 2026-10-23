@@ -606,45 +606,6 @@ details.more[open]>summary svg{transform:rotate(180deg)}
     <div class="nowfoot" id="n_foot">Rule: buys only when the macro is bullish and price is above the 6 PM VWAP. Sells only when the macro is bearish and price is below it. Anything else: stand aside.</div>
   </section>
 
-  <!-- RELEASE / TORUS -->
-  <div class="release">
-    <span class="progline" id="progline"></span>
-
-    <div class="relhead">
-      <div class="relcol">
-        <div class="eyebrow q">Next red folder</div>
-        <div class="relbig" id="relname">No events loaded</div>
-        <div class="relimp" id="relimp">Add this week&rsquo;s red folder</div>
-      </div>
-      <div class="relcol r">
-        <div class="eyebrow q">Session window</div>
-        <div class="relbig" id="winbig">&mdash;</div>
-        <div class="relimp mint" id="wintime"></div>
-      </div>
-    </div>
-
-    <div class="stage">
-      <canvas id="torus"></canvas>
-      <span class="core"><span class="coremark"><svg viewBox="0 0 16 16" fill="none"><path d="M2 11.5 5.5 6l3 3.5L13 3" stroke="#3fdc9a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
-
-      <div class="flags" id="flags" aria-hidden="true"></div>
-    </div>
-
-    <div class="ticks relticks"><span>09:15 read</span><span id="gatesub">Load this week&rsquo;s red folder below.</span><span>11:00 cutoff</span></div>
-  </div>
-
-
-  <details class="more" id="more">
-    <summary>Show details <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
-    <div class="morebody">
-
-  <!-- KEY LEVELS (live, from OANDA) -->
-  <div class="card">
-    <div class="eyebrow q">Key levels · live</div>
-    <h2 class="title">Where price sits</h2>
-    <p class="lede">Distance from live price in pips (1 pip = $0.10). VWAP and levels are rebuilt every minute from OANDA 5-minute candles since the 6 PM reset, weighted by tick volume.</p>
-    <div class="lvls" id="lvls"><div class="lvl"><small>Waiting</small><b>—</b><i>Connect the live feed</i></div></div>
-  </div>
 
   <!-- MORNING READ -->
   <div class="morning">
@@ -759,6 +720,41 @@ details.more[open]>summary svg{transform:rotate(180deg)}
       </div>
     </div>
     <div class="mright"><svg id="mhead" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The four questions of today's read, mapped on a head"></svg></div>
+  </div>
+
+  <!-- RELEASE / TORUS -->
+  <div class="release">
+    <span class="progline" id="progline"></span>
+
+    <div class="relhead">
+      <div class="relcol">
+        <div class="eyebrow q">Next red folder</div>
+        <div class="relbig" id="relname">No events loaded</div>
+        <div class="relimp" id="relimp">Add this week&rsquo;s red folder</div>
+      </div>
+      <div class="relcol r">
+        <div class="eyebrow q">Session window</div>
+        <div class="relbig" id="winbig">&mdash;</div>
+        <div class="relimp mint" id="wintime"></div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <canvas id="torus"></canvas>
+      <span class="core"><span class="coremark"><svg viewBox="0 0 16 16" fill="none"><path d="M2 11.5 5.5 6l3 3.5L13 3" stroke="#3fdc9a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+
+      <div class="flags" id="flags" aria-hidden="true"></div>
+    </div>
+
+    <div class="ticks relticks"><span>09:15 read</span><span id="gatesub">Load this week&rsquo;s red folder below.</span><span>11:00 cutoff</span></div>
+  </div>
+
+  <!-- KEY LEVELS (live, from OANDA) -->
+  <div class="card">
+    <div class="eyebrow q">Key levels · live</div>
+    <h2 class="title">Where price sits</h2>
+    <p class="lede">Distance from live price in pips (1 pip = $0.10). VWAP and levels are rebuilt every minute from OANDA 5-minute candles since the 6 PM reset, weighted by tick volume.</p>
+    <div class="lvls" id="lvls"><div class="lvl"><small>Waiting</small><b>—</b><i>Connect the live feed</i></div></div>
   </div>
 
   <!-- ASSET / ANALYSIS: feeds -> wires -> read -->
@@ -908,9 +904,6 @@ details.more[open]>summary svg{transform:rotate(180deg)}
       <button class="btn" id="evadd" type="button">Add</button>
     </div>
   </div>
-
-    </div>
-  </details>
 
   <div class="foot">Filled in by the 8:45 read every weekday. You read the market — this holds the scoring.</div>
 </div>
