@@ -581,63 +581,31 @@ details.more[open]>summary svg{transform:rotate(180deg)}
     <span class="live"><span class="dot"></span>ET <b id="etclock">--:--:--</b> <span id="etdate"></span></span>
   </div>
 
-  <!-- NOW: the four sentences -->
-  <section class="now lock" id="now" aria-live="polite">
-    <div class="nowbar"><small>Right now</small>
-      <span class="livechip" id="n_live"><i></i><span id="n_livet">Live feed off</span></span>
-      <button class="gear" id="n_gear" type="button" aria-label="Live feed keys"><svg viewBox="0 0 24 24" fill="none"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z" stroke="currentColor" stroke-width="1.6"/></svg></button>
-    </div>
-    <div class="nowtop">
-      <span class="light" aria-hidden="true"></span>
-      <div class="nowcall"><b id="n_call">Connecting…</b></div>
-    </div>
-    <div class="keys" id="n_keys" hidden>
-      <p>Paste your keys once. They're saved only in this browser, never in the code or on GitHub.</p>
-      <label for="k_fh">Finnhub API key (live price)<input id="k_fh" autocomplete="off" spellcheck="false"></label>
-      <label for="k_oa">OANDA practice token (VWAP and levels)<input id="k_oa" autocomplete="off" spellcheck="false"></label>
-      <div class="row"><button type="button" id="k_save">Save and connect</button><button type="button" class="ghost" id="k_close">Close</button></div>
-    </div>
-    <ol class="four">
-      <li><span id="n_s1">Waiting for live data.</span></li>
-      <li><span id="n_s2">Waiting for the 8:45 read.</span></li>
-      <li><span id="n_s3">Price vs VWAP shows once the live feed connects.</span></li>
-      <li><span id="n_s4">Checking the red folder.</span></li>
-    </ol>
-    <div class="nowfoot" id="n_foot">Rule: buys only when the macro is bullish and price is above the 6 PM VWAP. Sells only when the macro is bearish and price is below it. Anything else: stand aside.</div>
-  </section>
+  <!-- RELEASE / TORUS -->
+  <div class="release">
+    <span class="progline" id="progline"></span>
 
+    <div class="relhead">
+      <div class="relcol">
+        <div class="eyebrow q">Next red folder</div>
+        <div class="relbig" id="relname">No events loaded</div>
+        <div class="relimp" id="relimp">Add this week&rsquo;s red folder</div>
+      </div>
+      <div class="relcol r">
+        <div class="eyebrow q">Session window</div>
+        <div class="relbig" id="winbig">&mdash;</div>
+        <div class="relimp mint" id="wintime"></div>
+      </div>
+    </div>
 
-  <!-- MORNING READ -->
-  <div class="morning">
-    <div class="mhead">
-      <span class="eyebrow" style="margin:0">Morning read</span>
-      <span class="chip" id="m_stamp">Waiting for 8:45</span>
-    </div>
-    <p class="mline" id="m_head">The 8:45 read hasn&rsquo;t landed yet. On weekdays it fills this page in before your 9:15 read.</p>
-    <p class="mflag" id="m_flag" hidden></p>
-  </div>
+    <div class="stage">
+      <canvas id="torus"></canvas>
+      <span class="core"><span class="coremark"><svg viewBox="0 0 16 16" fill="none"><path d="M2 11.5 5.5 6l3 3.5L13 3" stroke="#3fdc9a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
 
-  <!-- AI ANALYSIS (written by the 8:45 task) -->
-  <div class="ai" id="ai">
-    <div class="aihead">
-      <span class="coin">Au</span>
-      <span class="aname"><b>XAU/USD</b><i>Gold spot</i></span>
-      <span class="aichg" id="ai_chg">&mdash;</span>
-      <span class="aitags">
-        <span class="chip" id="ai_tone" hidden></span>
-        <span class="chip" id="ai_bias">Waiting for 8:45</span>
-      </span>
+      <div class="flags" id="flags" aria-hidden="true"></div>
     </div>
-    <div class="aiconf">
-      <div class="aiconfrow"><span>Confidence</span><b id="ai_confnum">&mdash;</b></div>
-      <div class="aibar"><span id="ai_fill"></span></div>
-    </div>
-    <div class="aibox">
-      <div class="alabel"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.6 9.4 6 14 7.4 9.4 8.8 8 13.4 6.6 8.8 2 7.4 6.6 6 8 1.6Z" fill="currentColor"/></svg>AI analysis</div>
-      <p class="aitext" id="ai_text">The 8:45 read writes why gold is moving here: Fed cut odds, inflation, the dollar and the headlines that matter.</p>
-    </div>
-    <div class="aidrv" id="ai_drv"></div>
-    <span class="aimeta" id="ai_meta"></span>
+
+    <div class="ticks relticks"><span>09:15 read</span><span id="gatesub">Load this week&rsquo;s red folder below.</span><span>11:00 cutoff</span></div>
   </div>
 
   <!-- DESK: sources -> wires -> macro panel -->
@@ -722,31 +690,39 @@ details.more[open]>summary svg{transform:rotate(180deg)}
     <div class="mright"><svg id="mhead" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" role="img" aria-label="The four questions of today's read, mapped on a head"></svg></div>
   </div>
 
-  <!-- RELEASE / TORUS -->
-  <div class="release">
-    <span class="progline" id="progline"></span>
-
-    <div class="relhead">
-      <div class="relcol">
-        <div class="eyebrow q">Next red folder</div>
-        <div class="relbig" id="relname">No events loaded</div>
-        <div class="relimp" id="relimp">Add this week&rsquo;s red folder</div>
-      </div>
-      <div class="relcol r">
-        <div class="eyebrow q">Session window</div>
-        <div class="relbig" id="winbig">&mdash;</div>
-        <div class="relimp mint" id="wintime"></div>
-      </div>
+  <!-- RANGE -->
+  <div class="card">
+    <div class="eyebrow q">Range budget</div>
+    <h2 class="title">What the day owes you</h2>
+    <p class="lede">From the 50-session NY dataset, in pips. If a 3R target needs more room than the day has left, the setup does not qualify.</p>
+    <div class="stats">
+      <div class="stat"><b>441</b><i>Median day</i></div>
+      <div class="stat"><b>707</b><i>Trend day</i></div>
+      <div class="stat"><b>453</b><i>Range day</i></div>
+      <div class="stat"><b>350</b><i>Floor</i></div>
+      <div class="stat"><b>24%</b><i>Trend days</i></div>
     </div>
 
-    <div class="stage">
-      <canvas id="torus"></canvas>
-      <span class="core"><span class="coremark"><svg viewBox="0 0 16 16" fill="none"><path d="M2 11.5 5.5 6l3 3.5L13 3" stroke="#3fdc9a" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+    <div class="sesshead"><b>Today so far</b><span id="sess_tdate">Waiting for 8:45</span></div>
+    <div class="sessgrid three" id="sessgrid_today"></div>
+    <div class="sessnote" id="sess_tnote"></div>
 
-      <div class="flags" id="flags" aria-hidden="true"></div>
+    <div class="sesshead"><b>Yesterday by session</b><span id="sess_date">Waiting for 8:45</span></div>
+    <div class="sessgrid" id="sessgrid"></div>
+    <div class="sessnote" id="sess_note"></div>
+
+    <div class="beam daytype off" id="dt_box">
+      <div class="beamin">
+        <div>
+          <div class="dtlab">Today looks like</div>
+          <div class="dtcall" id="dt_call">&mdash;</div>
+        </div>
+        <div>
+          <p class="dtwhy" id="dt_why">The 8:45 read decides whether today is leaning trend or range from yesterday&rsquo;s sessions and how London has traded so far.</p>
+          <div class="dtbase">Your base rate: 76% of NY days are range or chop, 24% trend.</div>
+        </div>
+      </div>
     </div>
-
-    <div class="ticks relticks"><span>09:15 read</span><span id="gatesub">Load this week&rsquo;s red folder below.</span><span>11:00 cutoff</span></div>
   </div>
 
   <!-- KEY LEVELS (live, from OANDA) -->
@@ -755,6 +731,65 @@ details.more[open]>summary svg{transform:rotate(180deg)}
     <h2 class="title">Where price sits</h2>
     <p class="lede">Distance from live price in pips (1 pip = $0.10). VWAP and levels are rebuilt every minute from OANDA 5-minute candles since the 6 PM reset, weighted by tick volume.</p>
     <div class="lvls" id="lvls"><div class="lvl"><small>Waiting</small><b>—</b><i>Connect the live feed</i></div></div>
+  </div>
+
+  <!-- MORNING READ -->
+  <div class="morning">
+    <div class="mhead">
+      <span class="eyebrow" style="margin:0">Morning read</span>
+      <span class="chip" id="m_stamp">Waiting for 8:45</span>
+    </div>
+    <p class="mline" id="m_head">The 8:45 read hasn&rsquo;t landed yet. On weekdays it fills this page in before your 9:15 read.</p>
+    <p class="mflag" id="m_flag" hidden></p>
+  </div>
+
+  <!-- NOW: the four sentences -->
+  <section class="now lock" id="now" aria-live="polite">
+    <div class="nowbar"><small>Right now</small>
+      <span class="livechip" id="n_live"><i></i><span id="n_livet">Live feed off</span></span>
+      <button class="gear" id="n_gear" type="button" aria-label="Live feed keys"><svg viewBox="0 0 24 24" fill="none"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    </div>
+    <div class="nowtop">
+      <span class="light" aria-hidden="true"></span>
+      <div class="nowcall"><b id="n_call">Connecting…</b></div>
+    </div>
+    <div class="keys" id="n_keys" hidden>
+      <p>Paste your keys once. They're saved only in this browser, never in the code or on GitHub.</p>
+      <label for="k_fh">Finnhub API key (live price)<input id="k_fh" autocomplete="off" spellcheck="false"></label>
+      <label for="k_oa">OANDA practice token (VWAP and levels)<input id="k_oa" autocomplete="off" spellcheck="false"></label>
+      <div class="row"><button type="button" id="k_save">Save and connect</button><button type="button" class="ghost" id="k_close">Close</button></div>
+    </div>
+    <ol class="four">
+      <li><span id="n_s1">Waiting for live data.</span></li>
+      <li><span id="n_s2">Waiting for the 8:45 read.</span></li>
+      <li><span id="n_s3">Price vs VWAP shows once the live feed connects.</span></li>
+      <li><span id="n_s4">Checking the red folder.</span></li>
+    </ol>
+    <div class="nowfoot" id="n_foot">Rule: buys only when the macro is bullish and price is above the 6 PM VWAP. Sells only when the macro is bearish and price is below it. Anything else: stand aside.</div>
+  </section>
+
+
+  <!-- AI ANALYSIS (written by the 8:45 task) -->
+  <div class="ai" id="ai">
+    <div class="aihead">
+      <span class="coin">Au</span>
+      <span class="aname"><b>XAU/USD</b><i>Gold spot</i></span>
+      <span class="aichg" id="ai_chg">&mdash;</span>
+      <span class="aitags">
+        <span class="chip" id="ai_tone" hidden></span>
+        <span class="chip" id="ai_bias">Waiting for 8:45</span>
+      </span>
+    </div>
+    <div class="aiconf">
+      <div class="aiconfrow"><span>Confidence</span><b id="ai_confnum">&mdash;</b></div>
+      <div class="aibar"><span id="ai_fill"></span></div>
+    </div>
+    <div class="aibox">
+      <div class="alabel"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.6 9.4 6 14 7.4 9.4 8.8 8 13.4 6.6 8.8 2 7.4 6.6 6 8 1.6Z" fill="currentColor"/></svg>AI analysis</div>
+      <p class="aitext" id="ai_text">The 8:45 read writes why gold is moving here: Fed cut odds, inflation, the dollar and the headlines that matter.</p>
+    </div>
+    <div class="aidrv" id="ai_drv"></div>
+    <span class="aimeta" id="ai_meta"></span>
   </div>
 
   <!-- ASSET / ANALYSIS: feeds -> wires -> read -->
@@ -838,55 +873,6 @@ details.more[open]>summary svg{transform:rotate(180deg)}
   </div>
   </div>
 
-  <!-- RUBRIC -->
-  <details class="card layers">
-    <summary>
-      <span>
-        <span class="eyebrow q" style="display:block;margin-bottom:4px">Inputs</span>
-        <b class="laysum">See the nine layers</b>
-        <span class="laycount" id="laycount"></span>
-      </span>
-      <svg class="caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </summary>
-    <p class="lede" style="margin-top:12px">Filled by the 8:45 read every weekday. Real yields carry the most weight; retail positioning is read contrarian.</p>
-    <div id="rubric"></div>
-  </details>
-
-  <!-- RANGE -->
-  <div class="card">
-    <div class="eyebrow q">Range budget</div>
-    <h2 class="title">What the day owes you</h2>
-    <p class="lede">From the 50-session NY dataset, in pips. If a 3R target needs more room than the day has left, the setup does not qualify.</p>
-    <div class="stats">
-      <div class="stat"><b>441</b><i>Median day</i></div>
-      <div class="stat"><b>707</b><i>Trend day</i></div>
-      <div class="stat"><b>453</b><i>Range day</i></div>
-      <div class="stat"><b>350</b><i>Floor</i></div>
-      <div class="stat"><b>24%</b><i>Trend days</i></div>
-    </div>
-
-    <div class="sesshead"><b>Today so far</b><span id="sess_tdate">Waiting for 8:45</span></div>
-    <div class="sessgrid three" id="sessgrid_today"></div>
-    <div class="sessnote" id="sess_tnote"></div>
-
-    <div class="sesshead"><b>Yesterday by session</b><span id="sess_date">Waiting for 8:45</span></div>
-    <div class="sessgrid" id="sessgrid"></div>
-    <div class="sessnote" id="sess_note"></div>
-
-    <div class="beam daytype off" id="dt_box">
-      <div class="beamin">
-        <div>
-          <div class="dtlab">Today looks like</div>
-          <div class="dtcall" id="dt_call">&mdash;</div>
-        </div>
-        <div>
-          <p class="dtwhy" id="dt_why">The 8:45 read decides whether today is leaning trend or range from yesterday&rsquo;s sessions and how London has traded so far.</p>
-          <div class="dtbase">Your base rate: 76% of NY days are range or chop, 24% trend.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- EVENTS -->
   <div class="card">
     <div class="eyebrow q">Calendar</div>
@@ -904,6 +890,20 @@ details.more[open]>summary svg{transform:rotate(180deg)}
       <button class="btn" id="evadd" type="button">Add</button>
     </div>
   </div>
+
+  <!-- RUBRIC -->
+  <details class="card layers">
+    <summary>
+      <span>
+        <span class="eyebrow q" style="display:block;margin-bottom:4px">Inputs</span>
+        <b class="laysum">See the nine layers</b>
+        <span class="laycount" id="laycount"></span>
+      </span>
+      <svg class="caret" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <p class="lede" style="margin-top:12px">Filled by the 8:45 read every weekday. Real yields carry the most weight; retail positioning is read contrarian.</p>
+    <div id="rubric"></div>
+  </details>
 
   <div class="foot">Filled in by the 8:45 read every weekday. You read the market — this holds the scoring.</div>
 </div>
@@ -1422,8 +1422,10 @@ function paintMorning(){
     var fresh=SYNC.date===todayET();
     st.className=fresh?"chip up":"chip hold";
     st.textContent=fresh?"Updated "+fmtClock(SYNC.updatedAt):"Stale \u00b7 from "+SYNC.date;
-    if(SYNC.headline) hd.textContent=SYNC.headline;
-    fl.hidden=!SYNC.flags; fl.textContent=SYNC.flags;
+    var sp=function(t){ return String(t||"").replace(/\s+/g," ").trim().split(/(?<=[.!?])\s+(?=["“A-Z0-9])/).filter(Boolean); };
+    var hs=sp(SYNC.headline).slice(0,4), fs=sp(SYNC.flags).slice(0,Math.max(0,4-hs.length));
+    if(hs.length) hd.textContent=hs.join(" ");
+    fl.hidden=!fs.length; fl.textContent=fs.join(" ");
   }
   LAYERS.forEach(function(l){
     var r=el("rd-"+l.k); if(!r) return;
