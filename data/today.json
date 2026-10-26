@@ -1,161 +1,161 @@
 {
- "ai": {
-  "analysis": "Gold is flat on the day near 4,028 after a brutal Thursday that took it down 2.8%, and an Asian session that printed 3,987 \u2014 the first trade under $4,000 since July. The driver is the Fed: Brent at $113-114 on the Strait of Hormuz crisis has revived inflation fear, and FedWatch now prices a 75.2% chance of a 25bp hike on December 9 plus 15.2% on 50bp, with only 9.6% on a hold, so the policy backdrop is hawkish, not dovish. What makes today awkward is that almost everything that normally lifts gold is lifting \u2014 the 10Y real yield fell 14bp in five sessions to 2.64%, the 2Y dropped 12bp to 4.65%, the VIX jumped 14.1% in an AI-led equity rout, and specs are not crowded at 107k managed-money net long \u2014 and gold was sold anyway, which looks like forced liquidation to cover equity losses rather than a macro verdict. That correlation break is now six sessions old, and it is why this is a neutral call and not a buy. Reclaiming 4,065-4,070 and holding would say the liquidation is done and the real-yield signal is back in charge; acceptance below 3,987 confirms the hawkish read and opens 3,950, and the FOMC on Oct 27-28 and PCE on Oct 29 are what actually settle it.",
-  "bias": "neutral",
-  "changePct": 0.05,
-  "confidence": 43,
-  "drivers": [
-   {
-    "n": "Fed",
-    "t": "hawkish"
-   },
-   {
-    "n": "Real yields",
-    "t": "bullish"
-   },
-   {
-    "n": "Oil",
-    "t": "mixed"
-   },
-   {
-    "n": "Dollar",
-    "t": "bearish"
-   },
-   {
-    "n": "Headlines",
-    "t": "bearish"
-   }
-  ],
-  "tone": "hawkish"
- },
- "date": "2026-10-23",
- "dayType": {
-  "call": "unclear",
-  "reason": "London poked below yesterday's 4,027 low to 4,019 but has already reclaimed it and is back at 4,039, so nothing is holding beyond the level. London's 205 pips is under the 220 range threshold and well under the 265 needed for trend \u2014 but the whole day is already 398 pips, close to a median 441, so the move happened overnight in Asia rather than in London."
- },
- "events": [],
- "flags": "Correlation break, day six: gold -2.8% Thursday and through $4,000 overnight while the 10Y real yield fell 14bp to 2.64%, the 2Y fell 12bp to 4.65% and the VIX rose 14.1% \u2014 all three normally gold-positive. Gold is trading the oil-inflation / December-hike story, not its master driver. Note the oil layer scores +1 by the rule (crude bid) while its live transmission into gold today is bearish, via hike bets. Session splits today come from Kraken PAXG/USD hourly, a gold-backed proxy running roughly $10-12 above spot with slightly tighter extremes, so priorRange 668 may understate the true NY range \u2014 spot's own Oct 22 low was 4,020.90 against the proxy's 4,027.17. This is still a real session split, where the last two runs had none. Myfxbook returned figures identical to yesterday's run to two decimals, so that page may be cached. COT is the Oct 13 report, 10 days old, next print 15:30 ET today. No clean 5-sessions-ago DXY level was sourced. Real yields and the 2Y are Treasury par-curve Oct 22 closes, a day stale by design.",
- "headline": "NEUTRAL \u2014 the stack is BUY-SIDE (+3: real yields -14bp, 2Y -12bp, Brent $113, VIX +14%) but gold broke a three-month low under $4,000 on 90% December hike odds, so price has the floor until it reclaims 4,065-4,070.",
- "mind": {
-  "call": "stand aside",
-  "line": "Rates, oil and risk-off say buy; the dollar and the tape say sell, and the tape has been right for six sessions \u2014 that is no edge, not a fade. It becomes a buy only on a reclaim of 4,065-4,070 that holds while real yields stay down; it becomes a sell on acceptance back under 3,987. A hot PCE next Thursday, or December hike odds pushing past 95%, kills the bullish case outright.",
-  "steps": [
-   {
-    "k": "rates",
-    "say": "10Y real 2.64%, -14bp in 5 sessions; 2Y 4.65%, -12bp",
-    "t": "bullish"
-   },
-   {
-    "k": "dollar",
-    "say": "DXY 101.78, +0.17% today, firm on December hike bets",
-    "t": "bearish"
-   },
-   {
-    "k": "crowd",
-    "say": "MM net long 107k, -26k in 4 weeks; retail 52/48, no edge",
-    "t": "mixed"
-   },
-   {
-    "k": "price",
-    "say": "3-month low 3,987 overnight, -6.1% month-to-date",
-    "t": "bearish"
-   }
-  ]
- },
- "price": "4,028.00",
- "priorRange": 668,
- "readings": {
-  "cot": "Managed-money net long 107,089 (CFTC Oct 13 report, released Oct 16), -3,898 w/w and -26k over four weeks, ~27% of open interest; legacy non-commercial net 207,879, -2,456 w/w. Mid-range, unwinding \u2014 supportive, not crowded. 10 days stale and predates this week's repricing; next release 15:30 ET today",
-  "dxy": "DXY 101.78 now, +0.17% on the day vs 101.65 Oct 22 close; firming off a three-week low. No clean 5-session level sourced",
-  "fed": "CME FedWatch Dec 9: 75.2% a 25bp HIKE, 15.2% 50bp, only 9.6% hold; hike odds rose through the week. Cut odds are effectively nil",
-  "oil": "WTI ~$99.47-101 (+2.4%), Brent ~$113-114 on the Strait of Hormuz crisis \u2014 strongly bid",
-  "ret": "Myfxbook 52% long / 48% short (13,876 vs 9,396 positions; 2,086.51 vs 1,947.26 lots), average long 4,101.51, average short 3,866.78 \u2014 near balanced, no contrarian edge. Figures are identical to yesterday's run to two decimals, so treat the page as possibly cached",
-  "ry": "10Y real yield 2.64% (Oct 22), -0.14 vs 2.78% on Oct 15 \u2014 falling, gold-positive",
-  "sea": "October is normally a mildly favourable month for gold, but it is -6.1% month-to-date; no firm seasonal read sourced this run",
-  "sen": "VIX 19.03 (Oct 22), +14.1% on the day; Nasdaq -2.6% in an AI-led rout \u2014 risk-off, but gold was sold alongside it",
-  "y2": "2Y 4.65% (Oct 22), -0.12 vs 4.77% on Oct 15 \u2014 big risk-off bid Thursday"
- },
- "rub": {
-  "cot": 1,
-  "dxy": -1,
-  "fed": -1,
-  "oil": 1,
-  "ret": 0,
-  "ry": 1,
-  "sea": 0,
-  "sen": 1,
-  "y2": 1
- },
- "sessions": {
-  "day": "2026-10-22",
-  "full": {
-   "h": "4,142.70",
-   "l": "4,020.90",
-   "pips": 1218
+  "ai": {
+    "analysis": "Gold is up 0.67% at 4,021 because the rates picture keeps improving: the 10-year TIPS real yield is 2.64%, down 10bp from 2.74% five sessions ago, the 2-year is off 9bp to 4.65%, and the dollar has slipped about 1.2% from its Oct 14 high of 102.95 to around 101.5. The catch is that gold had all of that last week and still lost about 4%, closing at 3,995.81 for its first sub-$4,000 close since mid-July - seven sessions of gold ignoring its master driver, which is why this is a neutral call and not a buy. The Fed is the single bearish layer and it is the loudest one: Wednesday is a ~90% hold with zero cuts priced, a December hike sits at 72-78%, and core PCE Thursday is expected near 3.1% with Michigan inflation expectations up at 4.7% - that is a hawkish backdrop, even though the rates themselves have been easing. What is quietly helping is that December hike odds have come down from roughly 90% on Friday to about 80% today, which is exactly what pulled yields and the dollar lower and let gold bounce off a three-month low. Reclaim 4,100 and the bullish stack earns the benefit of the doubt; lose Friday's 3,975.65 low and the bounce is finished - and nothing really settles before Wednesday 2:00pm.",
+    "bias": "neutral",
+    "changePct": 0.67,
+    "confidence": 50,
+    "drivers": [
+      {
+        "n": "Real yields",
+        "t": "bullish"
+      },
+      {
+        "n": "Fed",
+        "t": "hawkish"
+      },
+      {
+        "n": "Dollar",
+        "t": "bullish"
+      },
+      {
+        "n": "Oil",
+        "t": "bullish"
+      },
+      {
+        "n": "Positioning",
+        "t": "mixed"
+      }
+    ],
+    "tone": "mixed"
   },
-  "rows": [
-   {
-    "h": "4,141.12",
-    "k": "syd",
-    "l": "4,092.27",
-    "note": "PAXG proxy",
-    "pips": 488
-   },
-   {
-    "h": "4,124.14",
-    "k": "asia",
-    "l": "4,075.36",
-    "note": "PAXG proxy",
-    "pips": 488
-   },
-   {
-    "h": "4,104.41",
-    "k": "lon",
-    "l": "4,054.47",
-    "note": "PAXG proxy",
-    "pips": 499
-   },
-   {
-    "h": "4,093.97",
-    "k": "ny",
-    "l": "4,027.17",
-    "note": "PAXG proxy; spot's own low was 4,020.90, so the true NY range was likely wider",
-    "pips": 668
-   }
-  ],
-  "source": "Kraken PAXG/USD 60min (gold-backed proxy, ~$10-12 above spot) for session splits; Twelve Data XAU/USD daily for the whole-day rows. Alpha Vantage skipped (no key set); Yahoo GC=F, Stooq and Binance all robots-blocked.",
-  "today": {
-   "asOf": "2026-10-23T12:51:00Z",
-   "full": {
-    "h": "4,033.20",
-    "l": "3,987.70",
-    "pips": 455
-   },
-   "rows": [
-    {
-     "h": "4,038.63",
-     "k": "syd",
-     "l": "4,000.00",
-     "note": "PAXG proxy; spot printed 3,987.70",
-     "pips": 386
+  "date": "2026-10-26",
+  "dayType": {
+    "call": "range",
+    "reason": "London has run only 165 pips so far (4,031.82-4,015.32 on the proxy), under half the 441 median day, and price is still inside Friday's 3,975.65-4,034.09 - today's 3,977.90-4,026.50 stopped $2 above Friday's low and $8 below its high. Note the whole day is already 486 pips, but Asia did that work (390) before London went quiet."
+  },
+  "events": [],
+  "flags": "Correlation break, day seven: gold fell ~4% last week and closed at 3,995.81, its first sub-$4,000 close since mid-July, while the 10Y real yield fell 10bp to 2.64% and the 2Y fell 9bp to 4.65% - both normally gold-positive. Gold is trading the December-hike story, not its master driver, and that is why this is neutral and not a buy. Session splits come from Kraken PAXG/USD hourly, a gold-backed proxy running ~$6 above spot at the highs and ~$14 above at the lows, so priorRange 486 likely UNDERSTATES Friday's true NY range: spot's own Friday high (4,034.09) and low (3,975.65) both fell inside the NY window, which puts the real NY range nearer 584 pips. Friday's high of 4,034.09 is derived from FXEmpire's published Oct 23 pivot set, which reproduces the independently reported 3,975.65 low and 3,995.81 close exactly - no feed printed it directly. Friday's Sydney window has a 2-hour PAXG gap (Oct 22 22:00-23:59 UTC). FRED real yields, the 2Y and VIX are Oct 22 closes and WTI is Oct 20, all stale by design. One aggregator page (riotimesonline) returned internally contradictory gold, VIX and DXY figures and was discarded.",
+  "headline": "NEUTRAL - the stack is BUY-SIDE (+4: real yields -10bp, 2Y -9bp, dollar off its high, crude near 4-year highs) but gold lost 4% last week doing the opposite, and a December hike stays ~80% priced into Wednesday's FOMC.",
+  "mind": {
+    "call": "stand aside",
+    "line": "Rates, the dollar and crude all say buy, and the tape has ignored them for seven sessions - that is no edge, not a fade. It becomes a buy on a reclaim of 4,100 that holds while real yields stay down; it becomes a sell on acceptance back below Friday's 3,975.65. A hot core PCE Thursday, or December hike odds pushing back above 90%, kills the bullish case outright.",
+    "steps": [
+      {
+        "k": "rates",
+        "say": "10Y TIPS 2.64%, -10bp in 5 sessions; 2Y -9bp to 4.65%",
+        "t": "bullish"
+      },
+      {
+        "k": "dollar",
+        "say": "DXY ~101.5, about 1.2% off the Oct 14 high of 102.95",
+        "t": "bullish"
+      },
+      {
+        "k": "crowd",
+        "say": "MM net long 104k, -29k in 5 weeks; retail 52/48, no edge",
+        "t": "mixed"
+      },
+      {
+        "k": "price",
+        "say": "-4% last week as real yields fell; +0.67% bounce today",
+        "t": "bearish"
+      }
+    ]
+  },
+  "price": "4,021.70",
+  "priorRange": 486,
+  "readings": {
+    "cot": "Managed-money net long 104,206 as of Tue Oct 20 (released Fri Oct 23), -2,883 w/w and roughly -29k over five weeks. Mid-range and unwinding - supportive, not crowded.",
+    "dxy": "DXY ~101.5 (Oct 26 am) vs 101.75 Fri close and the 102.95 52w high of Oct 14 - about 1.2% off the peak, easing as hike odds faded. No clean 5-session daily close sourced.",
+    "fed": "Oct 28 a ~90% hold with zero cuts priced; Dec hike 72-78%, ~80% a hike by year-end - down from ~90% on Friday. Hawkish regime, dovish drift.",
+    "oil": "FRED WTI $107.89 (Oct 20) vs $96.34 on Oct 14 - strongly bid. Brent ~$115 near 4-year highs after a ~$117 Fri settle; WTI ~$101 after -2% today on Qatari mediation reports.",
+    "ret": "Myfxbook 52% long / 48% short (13,876 vs 9,396 positions; 2,086.51 vs 1,947.26 lots), avg long 4,101.51, avg short 3,866.78. Near balanced - no contrarian edge, but longs are trapped ~$80 above spot.",
+    "ry": "10Y TIPS 2.64% (Oct 22, FRED DFII10), -0.10 vs 2.74% on Oct 16. Falling - gold-positive.",
+    "sea": "Unavailable - no dated seasonal study sourced this run, so scored 0. October is generally a mixed-to-soft month for gold; check manually.",
+    "sen": "VIX 19.03 (Oct 22, FRED VIXCLS) vs 19.99 on Oct 16; ~19.40 Fri settle. Flat over five sessions - no clear risk signal.",
+    "y2": "2Y 4.65% (Oct 22, FRED DGS2), -0.09 vs 4.74% on Oct 16; Treasury par curve 4.69% on Oct 23. Falling."
+  },
+  "rub": {
+    "cot": 1,
+    "dxy": 1,
+    "fed": -1,
+    "oil": 1,
+    "ret": 0,
+    "ry": 1,
+    "sea": 0,
+    "sen": 0,
+    "y2": 1
+  },
+  "sessions": {
+    "day": "2026-10-23",
+    "full": {
+      "h": "4,034.09",
+      "l": "3,975.65",
+      "pips": 584
     },
-    {
-     "h": "4,038.63",
-     "k": "asia",
-     "l": "4,000.00",
-     "note": "PAXG proxy; same low as Sydney \u2014 the sessions overlap",
-     "pips": 386
-    },
-    {
-     "h": "4,039.79",
-     "k": "lon",
-     "l": "4,019.26",
-     "live": true,
-     "note": "PAXG proxy; 08:00 London to 12:51 UTC",
-     "pips": 205
+    "rows": [
+      {
+        "h": "4,038.63",
+        "k": "syd",
+        "l": "4,000.00",
+        "note": "PAXG proxy; 2-hour gap in the feed (Oct 22 22:00-23:59 UTC).",
+        "pips": 386
+      },
+      {
+        "h": "4,038.63",
+        "k": "asia",
+        "l": "4,000.00",
+        "note": "PAXG proxy.",
+        "pips": 390
+      },
+      {
+        "h": "4,039.79",
+        "k": "lon",
+        "l": "3,991.18",
+        "note": "PAXG proxy; BST, so 07:00-16:00 UTC.",
+        "pips": 486
+      },
+      {
+        "h": "4,039.79",
+        "k": "ny",
+        "l": "3,991.18",
+        "note": "PAXG proxy. Spot's own Friday high and low BOTH fell in this window, so the true NY range was nearer 584 pips - the proxy understates it.",
+        "pips": 486
+      }
+    ],
+    "source": "Kraken PAXG/USD 60min (gold-backed proxy, ~$6-14 above spot) for session splits; spot daily OHLC from Kitco plus FXEmpire's Oct 23 pivot set for the whole-day rows. Alpha Vantage FX_INTRADAY skipped - key still PASTE_KEY_HERE. Yahoo GC=F chart JSON, Stooq CSV and Twelve Data demo all failed robots_disallowed via web fetch; direct curl to Yahoo was refused by the egress proxy.",
+    "today": {
+      "asOf": "2026-10-26T12:37:00Z",
+      "full": {
+        "h": "4,026.50",
+        "l": "3,977.90",
+        "pips": 486
+      },
+      "rows": [
+        {
+          "h": "4,021.83",
+          "k": "syd",
+          "l": "3,988.44",
+          "note": "PAXG proxy; spot's day low printed 3,977.90.",
+          "pips": 334
+        },
+        {
+          "h": "4,027.45",
+          "k": "asia",
+          "l": "3,988.44",
+          "note": "PAXG proxy; the day's low was set here, then gold turned.",
+          "pips": 390
+        },
+        {
+          "h": "4,031.82",
+          "k": "lon",
+          "l": "4,015.32",
+          "live": true,
+          "note": "PAXG proxy; BST ended Oct 25, so London is now 08:00-17:00 UTC. Last bar used is the 12:00 UTC hour.",
+          "pips": 165
+        }
+      ]
     }
-   ]
-  }
- },
- "updatedAt": "2026-10-23T12:51:38Z"
+  },
+  "updatedAt": "2026-10-26T13:20:00Z"
 }
